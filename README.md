@@ -78,3 +78,4 @@ AC analysis evaluates the frequency response of a common-source NMOS amplifier. 
 ![Screenshot 2025-02-17 165719](https://github.com/user-attachments/assets/12c78491-06a8-49a4-9d53-04e14121b87e) 
 The gain remains stable at lower frequencies.
 The amplifier’s bandwidth and highlights its frequency-dependent performance.
+
