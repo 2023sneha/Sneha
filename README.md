@@ -5,12 +5,18 @@
 # INTRODUCTION
 A Common Source (CS) amplifier using MOSFET is widely used for amplification.
 1. DC Analysis: Finds the operating point (Q-point) by setting proper biasing to keep the MOSFET in saturation.
+
 2. Transient Analysis: Studies the time response to input signals, crucial for switching and pulse response.
+
 3. AC Analysis: Examines small-signal gain, input/output impedance, and frequency response using the small-signal model.
+
 # Components Required
 NMOS Transistor : M1
+
 Resistor : R1 1K ohm
+
 Power Supply : V1 1.8V for DC Supply
+
 Input Signal Source : V2 0.9V signal input
 # Circuit Diagram
 ![Screenshot 2025-02-17 165839](https://github.com/user-attachments/assets/7288202d-dcc9-4d18-b716-29c0d3fcd9bf)
@@ -18,21 +24,34 @@ Input Signal Source : V2 0.9V signal input
 TSMCO18 library was included which is crucial for accurate MOSFET simulation in 180nm CMOS technology
 Here NMOS transistor must operate in saturation region for amplification.
 Lenght L = 250nm
+
 Width W = 0.05um
+
 Threshold Voltage(Vin) = 0.366V
+
 Resistor R1 = 1K ohm
+
 Supply Voltage = 1.8V
+
 Input AC signal : *DC Voltage:0.9V*Amplitude:50mV*Frequency:1KHz.
 # DC Analysis 
 ![Screenshot 2025-02-17 165304](https://github.com/user-attachments/assets/08e8fdaa-b415-4bd9-981b-a532027a210d) 
+
 Length L = 250nm
+
 Width W = 0.05um
+
 Results: 
 Vdd = 1.8V
+
 Vin = 0.9V
+
 Vout = 1.77V
+
 Id = 27.772uA
+
 Ig = 0A
+
 # Transient Analysis
 A sinusoidal input signal of 0.9V peak-to-peak is applied to the gate, and the output voltage is observed at the drain and it has a 180-degree phase shift between input and output.
 ![Screenshot 2025-02-17 165544](https://github.com/user-attachments/assets/6d1e8ad1-a7e6-4742-bc02-fa53f91b19b9) 
