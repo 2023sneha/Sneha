@@ -94,4 +94,18 @@ PMOS4 AND NMOS4 Transistor: CMOSP,CMOSN
      Transistors should be in saturation
        VTH<VIN<VOUT+VTH
        VIN-VTHN<=VOUT<=VDD-Vb-|VTHP|
+  # Circuit Diagram
+  ![Screenshot 2025-02-17 233542](https://github.com/user-attachments/assets/72f44a7a-26ec-43e2-83c1-ddc5424d988a)
+  # DC Analysis
+  ![Screenshot 2025-02-17 232311](https://github.com/user-attachments/assets/32ba1f69-648f-4e2f-8cc9-66253f3c8288)
+  # Transient Analysis
+  ![Screenshot 2025-02-17 232407](https://github.com/user-attachments/assets/b8573043-2ace-41df-8ff6-f1b42406477e)
+  # AC Analysis
+  ![Screenshot 2025-02-17 232526](https://github.com/user-attachments/assets/1ecae6f1-4fa2-4f69-9c8d-0ce7fe2351cf)
+
+
+  
+
+  
+
        
