@@ -1,7 +1,7 @@
 # Sneha
 # LINEAR INTEGRATED CIRCUITS
 # Experiment 1
-# DC,TRANSIENT AND AC ANALYSIS OF COMMON SOURCE AMPLIFIER USING MOSFET
+# Dc,Transient and AC Analysis of Common Source Amplifier using MOSFET
 # INTRODUCTION
 A Common Source (CS) amplifier using MOSFET is widely used for amplification.
 1. DC Analysis: Finds the operating point (Q-point) by setting proper biasing to keep the MOSFET in saturation.
@@ -51,6 +51,7 @@ Supply Voltage = 1.8V
 
 Input AC signal : *DC Voltage:0.9V*Amplitude:50mV*Frequency:1KHz.
 # DC Analysis 
+The required current for the given power values to operate mosfet in satuturation region is 27.772 micro ampers, since only w and l can be varied to get the desired current so their values are:
 ![Screenshot 2025-02-17 165304](https://github.com/user-attachments/assets/08e8fdaa-b415-4bd9-981b-a532027a210d) 
 
 Length L = 250nm
@@ -74,4 +75,6 @@ A sinusoidal input signal of 0.9V peak-to-peak is applied to the gate, and the o
 Vout = 1.7730V
 # AC Analysis
 AC analysis evaluates the frequency response of a common-source NMOS amplifier. The gain is plotted over a wide frequency range to observe how the circuit amplifies signals at different frequencies and determine its bandwidth limitations.
-![Screenshot 2025-02-17 165719](https://github.com/user-attachments/assets/12c78491-06a8-49a4-9d53-04e14121b87e)
+![Screenshot 2025-02-17 165719](https://github.com/user-attachments/assets/12c78491-06a8-49a4-9d53-04e14121b87e) 
+The gain remains stable at lower frequencies.
+The amplifier’s bandwidth and highlights its frequency-dependent performance.
