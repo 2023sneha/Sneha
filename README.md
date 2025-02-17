@@ -83,3 +83,15 @@ The amplifier’s bandwidth and highlights its frequency-dependent performance.
 The common-source amplifier was analyzed using DC, AC, and transient analysis in LTspice. 
 DC analysis set the biasing, AC analysis showed a  gain, and transient analysis revealed signal behavior. 
 The experiment confirms efficient amplification.
+# EXPERIMENT 2
+# CS amplifier analysis with PMOS replaced by resistor
+In a common-source (CS) amplifier, a PMOS transistor is typically used as a current source to provide a constant current for biasing the NMOS transistor. If the PMOS is replaced with a resistor at the source terminal, the amplifier's behavior changes. The source resistor (R_s) introduces negative feedback, affecting the biasing and gain of the amplifier. The voltage gain is reduced due to the combined effect of the source resistance and the intrinsic source resistance. This modification also changes the operating point, requiring careful adjustment of the biasing conditions to maintain proper operation.
+# Components Required
+PMOS4 AND NMOS4 Transistor: CMOSP,CMOSN
+* Power Supply: V1 1.8V for DC supply
+* Input Signal : V2 0.9V Signal input
+* Bias voltage (Vb):
+     Transistors should be in saturation
+       VTH<VIN<VOUT+VTH
+       VIN-VTHN<=VOUT<=VDD-Vb-|VTHP|
+       
