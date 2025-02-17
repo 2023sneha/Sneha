@@ -79,3 +79,7 @@ AC analysis evaluates the frequency response of a common-source NMOS amplifier. 
 The gain remains stable at lower frequencies.
 The amplifier’s bandwidth and highlights its frequency-dependent performance.
 
+# Inference
+The common-source amplifier was analyzed using DC, AC, and transient analysis in LTspice. 
+DC analysis set the biasing, AC analysis showed a  gain, and transient analysis revealed signal behavior. 
+The experiment confirms efficient amplification.
