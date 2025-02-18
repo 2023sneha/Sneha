@@ -79,11 +79,16 @@ AC analysis evaluates the frequency response of a common-source NMOS amplifier. 
 The gain remains stable at lower frequencies.
 The amplifier’s bandwidth and highlights its frequency-dependent performance.
 
+# Gain
+![image](https://github.com/user-attachments/assets/d326aa5f-dfdc-4bb7-acf3-f25de7746308)
+gain= 27.84
+
+
 # Inference
 The common-source amplifier was analyzed using DC, AC, and transient analysis in LTspice. 
 DC analysis set the biasing, AC analysis showed a  gain, and transient analysis revealed signal behavior. 
 The experiment confirms efficient amplification.
-# EXPERIMENT 2
+# CIRCUIT 2
 # CS amplifier analysis with PMOS replaced by resistor
 In a common-source (CS) amplifier, a PMOS transistor is typically used as a current source to provide a constant current for biasing the NMOS transistor. If the PMOS is replaced with a resistor at the source terminal, the amplifier's behavior changes. The source resistor (R_s) introduces negative feedback, affecting the biasing and gain of the amplifier. The voltage gain is reduced due to the combined effect of the source resistance and the intrinsic source resistance. This modification also changes the operating point, requiring careful adjustment of the biasing conditions to maintain proper operation.
 # Components Required
@@ -122,6 +127,10 @@ PMOS4 AND NMOS4 Transistor: CMOSP,CMOSN
   frequency sweep is 1kHz
   DC offset is 0.9V
   ![Screenshot 2025-02-17 232526](https://github.com/user-attachments/assets/1ecae6f1-4fa2-4f69-9c8d-0ce7fe2351cf)
+  # Gain
+  ![Screenshot 2025-02-18 111532](https://github.com/user-attachments/assets/1f293ec3-0086-4153-bb84-8a6628faeb36)
+  gain=29.04
+
 
 # Inference
 The MOSFET's drain current  is directly proportional to its width, influencing circuit performance and power consumption.
