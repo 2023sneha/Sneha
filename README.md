@@ -97,12 +97,37 @@ PMOS4 AND NMOS4 Transistor: CMOSP,CMOSN
   # Circuit Diagram
   ![Screenshot 2025-02-17 233542](https://github.com/user-attachments/assets/72f44a7a-26ec-43e2-83c1-ddc5424d988a)
   # DC Analysis
+  Here we determine the biasing conditions of the circuit by calculating the DC operating point that is Q-point. The voltages and currents at different nodes of the circuit are analyzed to ensure proper transistor operation. Since the PMOS is replaced by a resistor, the drain voltage and drain current depend on the resistor value and supply voltage.
+  Width(W): 1.8um
+  Length(L): 1.7um
+  Width(W): 1.8um
+  Length(L): 1.7um *
+  Drain current(ID): 27.77uA
+  VGS = VG-VS= 0.9-0= 0.9V
+  VDS = VD-VS= 1.8-0= 1.8v
+  VB = 0.1V From this [Vtn(0.366V)][Vtp(0.39)]
+  VGS >=VTN,Vtp , VDS>=VGS-VTN ,VGS-VTP,then MOSFET is in saturation region.
   ![Screenshot 2025-02-17 232311](https://github.com/user-attachments/assets/32ba1f69-648f-4e2f-8cc9-66253f3c8288)
   # Transient Analysis
+  Transient Analysis helps in understanding the amplifier’s performance for real-time signal processing and determining its stability and response speed.
+  There is a 180 degree phase shift between in input and output.
+  The input voltage is applied to the gate(0.9V)
+  The output voltage is measured at the drain = 1.26V.
+  PMOS is replaced by a resistor, the circuit's dynamic response, including signal amplification, delay, and distortion, is analyzed.
   ![Screenshot 2025-02-17 232407](https://github.com/user-attachments/assets/b8573043-2ace-41df-8ff6-f1b42406477e)
   # AC Analysis
+  AC Analysis helps to determine the key parameters such as voltage gain, bandwidth, and phase shift. With the PMOS replaced by a resistor, the amplifier's gain is affected, as the resistor impacts the output 
+  impedance and overall performance.
+  AC amplitude is 50mV
+  frequency sweep is 1kHz
+  DC offset is 0.9V
   ![Screenshot 2025-02-17 232526](https://github.com/user-attachments/assets/1ecae6f1-4fa2-4f69-9c8d-0ce7fe2351cf)
 
+# Inference
+The MOSFET's drain current  is directly proportional to its width, influencing circuit performance and power consumption.
+The MOSFET operates in the saturation region for amplification, ensuring a stable output.
+Transient analysis evaluates the circuit’s response to time-varying signals, which is crucial for high-speed applications and switching performance.
+AC analysis helps in designing amplifiers by determining gain, bandwidth, and frequency response.
 
   
 
