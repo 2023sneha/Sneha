@@ -189,20 +189,23 @@ which influence an amplifier’s capability to process fast signals. Additionall
 **Output waveform:**
 ![Screenshot 2025-03-09 184927](https://github.com/user-attachments/assets/856f933a-50fb-414d-a10c-c38afd5b43ce)
 **Input and Output Waveform**
-![Screenshot 2025-03-09 185020](https://github.com/user-attachments/assets/49d5eac0-99be-40ac-9b7a-3dfce13a3a62)
+![image](https://github.com/user-attachments/assets/515aac92-cc7e-4fd6-8a26-f11c5f1ece02)
 
 
 From the graph ,we can observe the 180 degree phase shift in the output signal and the output voltage (at Vocm node) is amplified .
 
 **Gain(Av) = Voutpeak/Vinpeak**
 
-=  = 
-**20logGain(Av)dB = ** 
+=1.875-1.7504/1.7705-1.6709  = 1.251V/V
+**20log(1.251)dB =1.9451dB ** 
 
 ## AC Analysis
 
 ![image](https://github.com/user-attachments/assets/fa5163e4-e895-4aa8-85b8-0673373cb5f3)
-![image](https://github.com/user-attachments/assets/c2305507-dff8-457b-b468-a6e86c5b4d99)
+![image](https://github.com/user-attachments/assets/b2753eb5-35d8-4d8c-9fcb-ce7751e23b68)
+
+From the graph gain in dB scale is
+20log(1.251)=1.9451dB
 
 
 
