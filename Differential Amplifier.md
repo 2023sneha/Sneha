@@ -23,6 +23,9 @@ Common Mode: This mode considers the shared component of the two input signals, 
 
 Differential Mode: This mode focuses on the voltage difference between the two inputs, expressed as V₁ - V₂. This difference is typically the signal of interest in amplification applications.
 
+
+
+
 ## Circuit Diagram
 
 ![image](https://github.com/user-attachments/assets/30104f9d-82a7-45d0-8ee6-d6d8abc46d37)
