@@ -1,10 +1,15 @@
 ## Experminet 3:- MOS Differential Amplifier
 ## AIM:Design and analyse the MOS differential amplifier circuit for the given specification.
 VDD=3.3V
+
 P<=3mW
+
 Vicm=1.72V
+
 Vocm=1.81V
+
 Vp= 0.7V
+
 ## Perform DC analysis, transient analysis and frequency response and extract the required paramenters.
 
 ## Introduction
@@ -143,7 +148,6 @@ Id(M1) = 0.37mA
 
 Vtn = 0.487V
 
-VGS = 1.02V
 
 VDD = IdRd + VDS +Vp
 
@@ -161,21 +165,12 @@ Id(M2) = 0.37mA
 
 Vtn = 0.487V
 
-VGS = 1.02V
-
 VDD = IdRd + VDS +Vp
 
 VDS = 3.3 - 1.454 - 0.7
 
 VDS = 1.146V
 
-To verify the mosfets are in saturation region : VGD <= VTn
-
-
-
-
-
-Therefore mosfets are in saturation region .
 
 The Q-points of both the mosfets(M1 and M2) are (1.146V, 0.37mA)
 
@@ -196,7 +191,6 @@ which influence an amplifier’s capability to process fast signals. Additionall
 **Input and Output Waveform**
 ![Screenshot 2025-03-09 185020](https://github.com/user-attachments/assets/49d5eac0-99be-40ac-9b7a-3dfce13a3a62)
 
-![Screenshot 2025-03-09 185111](https://github.com/user-attachments/assets/9be599b8-7302-4944-a9c7-3ab9cedf130a)
 
 From the graph ,we can observe the 180 degree phase shift in the output signal and the output voltage (at Vocm node) is amplified .
 
@@ -204,6 +198,136 @@ From the graph ,we can observe the 180 degree phase shift in the output signal a
 
 =  = 
 **20logGain(Av)dB = ** 
+
+## AC Analysis
+
+![image](https://github.com/user-attachments/assets/fa5163e4-e895-4aa8-85b8-0673373cb5f3)
+![image](https://github.com/user-attachments/assets/c2305507-dff8-457b-b468-a6e86c5b4d99)
+
+
+
+## Circuit 2
+Replacing ( R3 ) with a current source ( Iss ) transforms the circuit into a fully differential pair with an active current source. This modification eliminates source degeneration, increasing the gain and improving common-mode rejection (CMRR). The current source ensures a stable bias current, making the circuit less sensitive to variations in component values. Without ( R3 ), the transconductance ( g_m ) is higher, resulting in a larger differential gain given by (Ad=gm*rd).
+
+
+![image](https://github.com/user-attachments/assets/e157baa2-2d18-4038-8405-d9065f551b2b)
+
+## DC Analysis
+
+![image](https://github.com/user-attachments/assets/6ede87d0-5b55-469d-af39-61ab1ebc9572)
+
+![image](https://github.com/user-attachments/assets/a5869d1f-b101-45f6-ad85-237277559344)
+
+
+Mosfet aspect ratio was same ie, L= 180nm, W = 2.0553um
+
+for mosfet M1 & M2:
+
+Vicm = 1.72V
+
+Vocm = 1.81V
+
+Id= 0.37mA
+
+Vtn = 0.487v
+
+VDD = IdRd + VDS +Vp
+
+VDS =3.3 - 1.454 - 0.7
+
+VDS = 1.146 V
+
+The Q-point of both the mosfets are (1.146V, 0.37mA).
+
+
+## Transient Analysis
+
+**Output Waveform**
+![image](https://github.com/user-attachments/assets/45047349-ef07-4c27-88e1-19785e6bc0f3)
+
+**Input Waveform**
+![image](https://github.com/user-attachments/assets/2fbbb163-8677-49fd-8cd3-4506c0f74314)
+
+**Input and Output Waveform**
+![image](https://github.com/user-attachments/assets/ea1103aa-9621-490a-a058-2336c488b4b8)
+
+From the above observation
+Gain Av=Vout(peak)/Vin(peak)
+Av= 0.3156/0.1004 = 3.143 V/V
+Converting it to the decibel(dB):
+20log(3.143) = 9.94 dB
+
+
+## AC Analysis
+![image](https://github.com/user-attachments/assets/23c89a63-4405-47c9-9db4-5ab71a96ab95)
+
+From the graph gain in dB scale is
+20log(3.143)=9.94dB
+
+
+## Circuit 3
+**Differential Amplifier with NMOS Current Source Biasing**
+
+This circuit features an improved differential amplifier where the traditional tail resistor is replaced with an NMOS transistor (M3) functioning as a current source. This modification enhances the stability and control of the bias current in the differential pair (M1 and M2), resulting in a more consistent operating point and improved common-mode rejection.
+
+By utilizing an active NMOS current source, the circuit achieves higher accuracy and stability in amplifying the difference between the input signals (V2 and V1). This method ensures better regulation of the bias current, which is crucial for applications demanding precise signal processing and strong resistance to common-mode noise. While maintaining its fundamental role of differential signal amplification, the circuit benefits from enhanced performance and reliability due to the active biasing approach.
+
+## Circuit Diagram
+![image](https://github.com/user-attachments/assets/97c1716e-bf98-4e86-9de6-abfdbd0546a7)
+
+## DC Analysis
+![image](https://github.com/user-attachments/assets/a83ad4ed-046e-45a9-8ab1-de3e000e6d14)
+![image](https://github.com/user-attachments/assets/b088203d-4032-4b0e-a606-86d3ec1b895a)
+
+
+Mosfet aspect ratio was same ie, L= 180nm, W = 2.0549um
+
+for mosfet M1 & M2:
+
+Vicm = 1.72V
+
+Vocm = 1.81V
+
+Id= 0.37mA
+
+Vtn = 0.487v
+
+VDD = IdRd + VDS +Vp
+
+VDS =3.3 - 1.454 - 0.7
+
+VDS = 1.146 V
+
+The Q-point of both the mosfets are (1.146V, 0.37mA).
+
+
+## Transient Analysis
+
+**Output Waveform**
+![image](https://github.com/user-attachments/assets/593d8860-09bd-4abd-aa47-bd9907e1ed00)
+
+**Input Waveform**
+![image](https://github.com/user-attachments/assets/49eca7d2-5ff6-4bf7-bf40-f0618cc88b45)
+
+**Input and Output Waveform**
+![image](https://github.com/user-attachments/assets/b544b301-a5e0-4fe2-8b7b-97e7464a64be)
+
+From the above observation
+Gain Av=Vout(peak)/Vin(peak)
+Av= 0.3126/0.0974 = 3.209V/V
+Converting it to the decibel(dB):
+20log(3.209) = 10.127 dB
+
+
+## AC Analysis
+![image](https://github.com/user-attachments/assets/a51c2042-109f-43d2-a2a4-796efc51b5be)
+
+
+From the graph gain in dB scale is
+20log(3.209)=10.127dB
+
+
+
 
 
 
