@@ -180,9 +180,28 @@ Therefore mosfets are in saturation region .
 The Q-points of both the mosfets(M1 and M2) are (1.146V, 0.37mA)
 
 ## Transient Analysis:
-transient analysis is used to simulate a circuit's behavior over time in response to dynamic inputs such as pulses, sine waves, or step signals.
+Transient analysis is used to simulate a circuit's behavior over time in response to dynamic inputs such as pulses, sine waves, or step signals.
 This analysis is particularly crucial for high-speed applications, as it helps evaluate key parameters like rise time, fall time, and propagation delay,
 which influence an amplifier’s capability to process fast signals. Additionally, it provides insight into how a MOSFET responds to sudden variations in input voltage and load conditions.
+
+
+![Screenshot 2025-03-09 184903](https://github.com/user-attachments/assets/bf69358b-22af-4305-a2ed-ca330024b68b)
+
+
+
+**Input waveform:**
+![Screenshot 2025-03-09 185007](https://github.com/user-attachments/assets/91722de7-f1b2-413e-909f-937c623579eb)
+**Output waveform:**
+![Screenshot 2025-03-09 184927](https://github.com/user-attachments/assets/856f933a-50fb-414d-a10c-c38afd5b43ce)
+**Input and Output Waveform**
+![Screenshot 2025-03-09 185020](https://github.com/user-attachments/assets/49d5eac0-99be-40ac-9b7a-3dfce13a3a62)
+
+![Screenshot 2025-03-09 185111](https://github.com/user-attachments/assets/9be599b8-7302-4944-a9c7-3ab9cedf130a)
+
+
+
+
+
 
 
 
