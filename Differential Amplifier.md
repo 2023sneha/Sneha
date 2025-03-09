@@ -141,9 +141,9 @@ Vocm = 1.81V
 
 Id(M1) = 0.37mA
 
-Vtn = 
+Vtn = 0.487V
 
-VGS = 
+VGS = 1.02V
 
 VDD = IdRd + VDS +Vp
 
@@ -159,9 +159,9 @@ Vocm = 1.81V
 
 Id(M2) = 0.37mA
 
-Vtn = 
+Vtn = 0.487V
 
-VGS = 
+VGS = 1.02V
 
 VDD = IdRd + VDS +Vp
 
@@ -197,6 +197,13 @@ which influence an amplifier’s capability to process fast signals. Additionall
 ![Screenshot 2025-03-09 185020](https://github.com/user-attachments/assets/49d5eac0-99be-40ac-9b7a-3dfce13a3a62)
 
 ![Screenshot 2025-03-09 185111](https://github.com/user-attachments/assets/9be599b8-7302-4944-a9c7-3ab9cedf130a)
+
+From the graph ,we can observe the 180 degree phase shift in the output signal and the output voltage (at Vocm node) is amplified .
+
+**Gain(Av) = Voutpeak/Vinpeak**
+
+=  = 
+**20logGain(Av)dB = ** 
 
 
 
