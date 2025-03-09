@@ -383,7 +383,7 @@ The NMOS current source offers the highest impedance, leading to the most effect
 
 ## Summary of Reasons:
 
-Resistor (Rss):
+**Resistor (Rss):**
 
 Restricts current flow, limiting differential gain.
 
@@ -392,7 +392,7 @@ Causes a voltage drop, reducing output swing.
 Has low impedance, making the circuit more susceptible to common-mode noise.
 
 
-Ideal Current Source:
+**Ideal Current Source:**
 
 Supplies a constant tail current, improving gain.
 
@@ -401,7 +401,7 @@ Eliminates voltage drop issues, allowing for a wider output swing.
 Has high impedance, enhancing common-mode rejection.
 
 
-NMOS Current Source:
+**NMOS Current Source:**
 
 Functions as an active high-impedance source, optimizing differential gain.
 
