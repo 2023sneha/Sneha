@@ -1,7 +1,6 @@
 # CURRENT MIRROR <br>
 A current mirror is an essential circuit used in analog electronics to copy a reference current from one active device to another while maintaining a stable and accurate current flow (Iref = Iout). It is widely employed in biasing circuits, active loads, and differential amplifiers<br>
-![what is current mirror](https://github.com/user-attachments/assets/1768da11-0189-48ea-9dc7-6f677b3c4609)
-<br>
+
 ## WORKING PRINCIPLE OF CURRENT MIRROR :<br>
 
 #### 1. Reference Current Generation:<br>
@@ -23,3 +22,17 @@ A current mirror is an essential circuit used in analog electronics to copy a re
 therefore,<br>
 I<sub>out</sub> = (W/L)<sub>2</sub>/(W/L)<sub>1</sub> * I<sub>ref</sub> <br>
 <br>
+## Key Conditions for Proper Operation : <br>
+
+#### Both transistors should be in saturation<br>
+
+This ensures that the drain current depends only on V<sub>gs</sub> and not on V<sub>ds</sub> <br>
+
+#### Matching of Transistors <br>
+
+Fabrication variations can cause mismatch in threshold voltage (V<sub>th</sub>), affecting accuracy.<br>
+
+#### Channel Length Modulation<br> 
+
+Practical mirrors suffer from a small variation in I<sub>out</sub>due to V<sub>ds</sub> changes.<br>
+Using a cascode current mirror reduces this effect by increasing output resistance.<br>
