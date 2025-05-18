@@ -36,3 +36,12 @@ Fabrication variations can cause mismatch in threshold voltage (V<sub>th</sub>),
 
 Practical mirrors suffer from a small variation in I<sub>out</sub>due to V<sub>ds</sub> changes.<br>
 Using a cascode current mirror reduces this effect by increasing output resistance.<br>
+
+## PMOS Current Mirror<br>
+
+![image](https://github.com/user-attachments/assets/1a870006-1e99-448a-b5e7-c4ddd99f8417)
+<br>
+This shows the implementation of current mirror using the PMOS transistors. In PMOS current mirror, the source terminals for both transistors are connected to Supply voltage Vdd.<br>
+The relation between the Iout and Iref can be given by the same expression.<br>
+I<sub>out</sub> = (W/L)<sub>2</sub>/(W/L)<sub>1</sub> * I<sub>ref</sub> <br>
+The only thing which needs to be ensured is that M1 should operate in the saturation region. Or in other words, VSD1 ≥ VSG – |VTP |, Where VTP is the threshold voltage of the PMOS transistor.<br>
